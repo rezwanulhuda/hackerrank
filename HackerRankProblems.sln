@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Staircase", "Staircase\Stai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angry Professor", "Angry Professor\Angry Professor.csproj", "{6279E9AB-BBE9-46C6-B797-324437C338B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two Strings", "Two Strings\Two Strings.csproj", "{BBC2EFA8-9AE1-4841-967E-6C14BEA20C9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bigger is Greater", "Bigger is Greater\Bigger is Greater.csproj", "{A799B2D7-6F14-445B-B370-83CCC91C88AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{6279E9AB-BBE9-46C6-B797-324437C338B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6279E9AB-BBE9-46C6-B797-324437C338B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6279E9AB-BBE9-46C6-B797-324437C338B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC2EFA8-9AE1-4841-967E-6C14BEA20C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC2EFA8-9AE1-4841-967E-6C14BEA20C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC2EFA8-9AE1-4841-967E-6C14BEA20C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC2EFA8-9AE1-4841-967E-6C14BEA20C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A799B2D7-6F14-445B-B370-83CCC91C88AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A799B2D7-6F14-445B-B370-83CCC91C88AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A799B2D7-6F14-445B-B370-83CCC91C88AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A799B2D7-6F14-445B-B370-83CCC91C88AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
