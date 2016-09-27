@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two Strings", "Two Strings\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bigger is Greater", "Bigger is Greater\Bigger is Greater.csproj", "{A799B2D7-6F14-445B-B370-83CCC91C88AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bon Appétit", "Bon Appétit\Bon Appétit.csproj", "{2BB1D56C-B781-48E6-B579-6D2BAAE57CE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bonetrousle", "Bonetrousle\Bonetrousle.csproj", "{11B81854-B3B2-4610-8110-D1091501D6DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{A799B2D7-6F14-445B-B370-83CCC91C88AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A799B2D7-6F14-445B-B370-83CCC91C88AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A799B2D7-6F14-445B-B370-83CCC91C88AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BB1D56C-B781-48E6-B579-6D2BAAE57CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB1D56C-B781-48E6-B579-6D2BAAE57CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB1D56C-B781-48E6-B579-6D2BAAE57CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB1D56C-B781-48E6-B579-6D2BAAE57CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11B81854-B3B2-4610-8110-D1091501D6DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B81854-B3B2-4610-8110-D1091501D6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B81854-B3B2-4610-8110-D1091501D6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B81854-B3B2-4610-8110-D1091501D6DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
