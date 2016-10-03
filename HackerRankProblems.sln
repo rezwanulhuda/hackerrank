@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindDigits", "FindDigits\FindDigits.csproj", "{BAA00C8F-CE6A-4DD6-A59B-10AAE24811AD}"
 EndProject
@@ -32,6 +32,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bon Appétit", "Bon Appétit\Bon Appétit.csproj", "{2BB1D56C-B781-48E6-B579-6D2BAAE57CE6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bonetrousle", "Bonetrousle\Bonetrousle.csproj", "{11B81854-B3B2-4610-8110-D1091501D6DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome Index", "Palindrome Index\Palindrome Index.csproj", "{97F57FCF-357C-4286-807F-BEFFA9DB82F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagram", "Anagram\Anagram.csproj", "{E8F4905A-893B-4A1E-AB1A-82124DA4B996}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game of Thrones - I", "Game of Thrones - I\Game of Thrones - I.csproj", "{A4E9A407-DBFE-4437-A145-C5CC6F3FD580}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Making Anagrams", "Making Anagrams\Making Anagrams.csproj", "{54B79BE3-A539-425C-97AD-95E8827E866E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +107,22 @@ Global
 		{11B81854-B3B2-4610-8110-D1091501D6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11B81854-B3B2-4610-8110-D1091501D6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11B81854-B3B2-4610-8110-D1091501D6DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F57FCF-357C-4286-807F-BEFFA9DB82F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F57FCF-357C-4286-807F-BEFFA9DB82F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F57FCF-357C-4286-807F-BEFFA9DB82F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F57FCF-357C-4286-807F-BEFFA9DB82F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8F4905A-893B-4A1E-AB1A-82124DA4B996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8F4905A-893B-4A1E-AB1A-82124DA4B996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8F4905A-893B-4A1E-AB1A-82124DA4B996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8F4905A-893B-4A1E-AB1A-82124DA4B996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E9A407-DBFE-4437-A145-C5CC6F3FD580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E9A407-DBFE-4437-A145-C5CC6F3FD580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E9A407-DBFE-4437-A145-C5CC6F3FD580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E9A407-DBFE-4437-A145-C5CC6F3FD580}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B79BE3-A539-425C-97AD-95E8827E866E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B79BE3-A539-425C-97AD-95E8827E866E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B79BE3-A539-425C-97AD-95E8827E866E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B79BE3-A539-425C-97AD-95E8827E866E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
