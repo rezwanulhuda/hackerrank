@@ -41,6 +41,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game of Thrones - I", "Game
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Making Anagrams", "Making Anagrams\Making Anagrams.csproj", "{54B79BE3-A539-425C-97AD-95E8827E866E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bear and Steady Gene", "Bear and Steady Gene\Bear and Steady Gene.csproj", "{ECF2B4A2-01C2-47EB-B1A2-B21E387D2C74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pending", "Pending", "{3631AC14-BC76-438D-AAD9-27B56AE076EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maximizing XOR", "Maximizing XOR\Maximizing XOR.csproj", "{9E9BEC6E-042D-4600-A566-CF9D0E9AF256}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counter game", "Counter game\Counter game.csproj", "{6085A4C4-0F03-4ADA-A11E-1CFD6D493D51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,8 +131,24 @@ Global
 		{54B79BE3-A539-425C-97AD-95E8827E866E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54B79BE3-A539-425C-97AD-95E8827E866E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54B79BE3-A539-425C-97AD-95E8827E866E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECF2B4A2-01C2-47EB-B1A2-B21E387D2C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF2B4A2-01C2-47EB-B1A2-B21E387D2C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF2B4A2-01C2-47EB-B1A2-B21E387D2C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF2B4A2-01C2-47EB-B1A2-B21E387D2C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E9BEC6E-042D-4600-A566-CF9D0E9AF256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E9BEC6E-042D-4600-A566-CF9D0E9AF256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E9BEC6E-042D-4600-A566-CF9D0E9AF256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E9BEC6E-042D-4600-A566-CF9D0E9AF256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6085A4C4-0F03-4ADA-A11E-1CFD6D493D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6085A4C4-0F03-4ADA-A11E-1CFD6D493D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6085A4C4-0F03-4ADA-A11E-1CFD6D493D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6085A4C4-0F03-4ADA-A11E-1CFD6D493D51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{11B81854-B3B2-4610-8110-D1091501D6DE} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
+		{ECF2B4A2-01C2-47EB-B1A2-B21E387D2C74} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
 	EndGlobalSection
 EndGlobal

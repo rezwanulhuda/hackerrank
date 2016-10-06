@@ -4,7 +4,7 @@ using System.Linq;
 
 
 namespace Bonetrousle
-{
+{    
     class Solution
     {
         static List<int[]> partitions = new List<int[]>();
