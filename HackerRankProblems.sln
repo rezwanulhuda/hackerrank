@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counter game", "Counter gam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flipping bits", "Flipping bits\Flipping bits.csproj", "{25B01195-6B8C-4C12-8C3B-F1DA2C6EFBB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compare the Triplets", "Compare the Triplets\Compare the Triplets.csproj", "{957CFD01-95B6-4907-904E-83AC9E7F4F2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -149,6 +151,10 @@ Global
 		{25B01195-6B8C-4C12-8C3B-F1DA2C6EFBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25B01195-6B8C-4C12-8C3B-F1DA2C6EFBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25B01195-6B8C-4C12-8C3B-F1DA2C6EFBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{957CFD01-95B6-4907-904E-83AC9E7F4F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957CFD01-95B6-4907-904E-83AC9E7F4F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957CFD01-95B6-4907-904E-83AC9E7F4F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{957CFD01-95B6-4907-904E-83AC9E7F4F2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
