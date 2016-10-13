@@ -55,6 +55,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compare the Triplets", "Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamelCase", "CamelCase\CamelCase.csproj", "{C6D90B7B-6451-4F9F-A846-494FEA698498}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two Characters", "Two Characters\Two Characters.csproj", "{AA3FB3CB-857C-4D2D-BF2A-1C1C1B4C13C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insertion Sort - Part 1", "Insertion Sort - Part 1\Insertion Sort - Part 1.csproj", "{AD108C5B-9DAE-4C85-98BB-0FC1AC8E899A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -161,6 +165,14 @@ Global
 		{C6D90B7B-6451-4F9F-A846-494FEA698498}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6D90B7B-6451-4F9F-A846-494FEA698498}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6D90B7B-6451-4F9F-A846-494FEA698498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3FB3CB-857C-4D2D-BF2A-1C1C1B4C13C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3FB3CB-857C-4D2D-BF2A-1C1C1B4C13C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3FB3CB-857C-4D2D-BF2A-1C1C1B4C13C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3FB3CB-857C-4D2D-BF2A-1C1C1B4C13C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD108C5B-9DAE-4C85-98BB-0FC1AC8E899A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD108C5B-9DAE-4C85-98BB-0FC1AC8E899A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD108C5B-9DAE-4C85-98BB-0FC1AC8E899A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD108C5B-9DAE-4C85-98BB-0FC1AC8E899A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -168,5 +180,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{11B81854-B3B2-4610-8110-D1091501D6DE} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
 		{ECF2B4A2-01C2-47EB-B1A2-B21E387D2C74} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
+		{AA3FB3CB-857C-4D2D-BF2A-1C1C1B4C13C9} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
 	EndGlobalSection
 EndGlobal
