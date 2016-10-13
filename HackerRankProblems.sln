@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two Characters", "Two Chara
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insertion Sort - Part 1", "Insertion Sort - Part 1\Insertion Sort - Part 1.csproj", "{AD108C5B-9DAE-4C85-98BB-0FC1AC8E899A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insertion Sort - Part 2", "Insertion Sort - Part 2\Insertion Sort - Part 2.csproj", "{041C8342-2A77-4CD5-8F50-AABF238EF12D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -173,6 +175,10 @@ Global
 		{AD108C5B-9DAE-4C85-98BB-0FC1AC8E899A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD108C5B-9DAE-4C85-98BB-0FC1AC8E899A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD108C5B-9DAE-4C85-98BB-0FC1AC8E899A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041C8342-2A77-4CD5-8F50-AABF238EF12D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041C8342-2A77-4CD5-8F50-AABF238EF12D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041C8342-2A77-4CD5-8F50-AABF238EF12D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041C8342-2A77-4CD5-8F50-AABF238EF12D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
