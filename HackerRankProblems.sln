@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Time Conversion", "Time Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red John is Back", "Red John is Back\Red John is Back.csproj", "{F97B3EFE-C4ED-4BA2-A868-36A6B617538C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFS_Shortest_Reach", "BFS_Shortest_Reach\BFS_Shortest_Reach.csproj", "{92E351B6-1C52-40E8-9A63-4FD2B2AAC385}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -209,6 +211,10 @@ Global
 		{F97B3EFE-C4ED-4BA2-A868-36A6B617538C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F97B3EFE-C4ED-4BA2-A868-36A6B617538C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F97B3EFE-C4ED-4BA2-A868-36A6B617538C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92E351B6-1C52-40E8-9A63-4FD2B2AAC385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E351B6-1C52-40E8-9A63-4FD2B2AAC385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E351B6-1C52-40E8-9A63-4FD2B2AAC385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E351B6-1C52-40E8-9A63-4FD2B2AAC385}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -218,5 +224,6 @@ Global
 		{ECF2B4A2-01C2-47EB-B1A2-B21E387D2C74} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
 		{AA3FB3CB-857C-4D2D-BF2A-1C1C1B4C13C9} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
 		{B3F8757E-B480-4179-ABF8-8732DF6DDCA6} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
+		{92E351B6-1C52-40E8-9A63-4FD2B2AAC385} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
 	EndGlobalSection
 EndGlobal
