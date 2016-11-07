@@ -81,6 +81,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReusableCode", "ReusableCod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strange Counter", "Strange Counter\Strange Counter.csproj", "{E5775136-36DA-4E81-B6D8-38F22FC42B38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Save the Prisoner", "Save the Prisoner\Save the Prisoner.csproj", "{A81FC845-703C-44CB-B83D-7F55B857CD9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -235,6 +237,10 @@ Global
 		{E5775136-36DA-4E81-B6D8-38F22FC42B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5775136-36DA-4E81-B6D8-38F22FC42B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5775136-36DA-4E81-B6D8-38F22FC42B38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A81FC845-703C-44CB-B83D-7F55B857CD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81FC845-703C-44CB-B83D-7F55B857CD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81FC845-703C-44CB-B83D-7F55B857CD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81FC845-703C-44CB-B83D-7F55B857CD9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -244,5 +250,6 @@ Global
 		{ECF2B4A2-01C2-47EB-B1A2-B21E387D2C74} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
 		{AA3FB3CB-857C-4D2D-BF2A-1C1C1B4C13C9} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
 		{B3F8757E-B480-4179-ABF8-8732DF6DDCA6} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
+		{A81FC845-703C-44CB-B83D-7F55B857CD9B} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
 	EndGlobalSection
 EndGlobal
