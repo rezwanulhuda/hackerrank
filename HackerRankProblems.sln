@@ -83,6 +83,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strange Counter", "Strange 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Save the Prisoner", "Save the Prisoner\Save the Prisoner.csproj", "{A81FC845-703C-44CB-B83D-7F55B857CD9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinationGenerator", "CombinationGenerator\CombinationGenerator.csproj", "{9ADA3A2C-DB99-46F9-8CD4-4931917AB1CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -241,6 +243,10 @@ Global
 		{A81FC845-703C-44CB-B83D-7F55B857CD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A81FC845-703C-44CB-B83D-7F55B857CD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A81FC845-703C-44CB-B83D-7F55B857CD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ADA3A2C-DB99-46F9-8CD4-4931917AB1CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ADA3A2C-DB99-46F9-8CD4-4931917AB1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ADA3A2C-DB99-46F9-8CD4-4931917AB1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ADA3A2C-DB99-46F9-8CD4-4931917AB1CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -250,5 +256,6 @@ Global
 		{ECF2B4A2-01C2-47EB-B1A2-B21E387D2C74} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
 		{AA3FB3CB-857C-4D2D-BF2A-1C1C1B4C13C9} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
 		{B3F8757E-B480-4179-ABF8-8732DF6DDCA6} = {3631AC14-BC76-438D-AAD9-27B56AE076EF}
+		{9ADA3A2C-DB99-46F9-8CD4-4931917AB1CF} = {2094F043-6BE5-4908-A848-04E53E59679B}
 	EndGlobalSection
 EndGlobal

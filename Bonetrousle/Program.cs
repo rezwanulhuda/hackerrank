@@ -1,119 +1,206 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 
 namespace Bonetrousle
 {    
-    class Solution
+    class Solutino
     {
-        static List<int[]> partitions = new List<int[]>();
-        static void printArray(int[] p, int n)
+        private class ComboGenerator
         {
-            int[] copied = new int[n];
-            for(int i = 0; i < n; ++i)
+            long n;
+            long r;
+            long[] currentCombo = null;
+            long y;
+            bool done;
+
+            public ComboGenerator(long n, long r)
             {
-                copied[i] = p[i];
+                this.n = n;
+                this.r = r;
+                this.y = r;
+                this.done = false;
             }
 
-            partitions.Add(copied);            
+            void GenerateFirst()
+            {
+                this.currentCombo = new long[r + 1];
+                for (long x = 1; x <= r; ++x)
+                {
+                    currentCombo[x] = x;
+                }
+                done = false;
+            }
+
+            public long[] Next()
+            {
+                if (done == true)
+                {
+                    return null;
+                }
+
+                if (currentCombo == null)
+                {
+                    GenerateFirst();
+
+                }
+                else
+                {
+                    if (currentCombo[y] < n)
+                    {
+                        currentCombo[y] = currentCombo[y] + 1;
+                        if (y == 1 && r == 1 && currentCombo[y] == n)
+                        {
+                            done = true;
+                        }
+                        return currentCombo;
+                    }
+
+                    while (currentCombo[y] >= n - (r - y))
+                    {
+                        y--;
+                    }
+
+                    long tmp = currentCombo[y] + 1;
+
+                    if (y == 1 && tmp >= n - (r - y))
+                    {
+                        currentCombo[y] = tmp;
+                        done = true;
+                        return currentCombo;
+                    }
+
+                    while (y <= r)
+                    {
+                        currentCombo[y] = tmp;
+                        y++; tmp++;
+                    }
+                    y--;
+                    return currentCombo;
+                }
+
+                return currentCombo;
+            }
+
         }
 
-        static void printAllUniqueParts(int n)
+        private interface ILineReader
         {
-            partitions.Clear();
-            int[] p = new int[n]; // An array to store a partition
-            int k = 0;  // Index of last element in a partition
-            p[k] = n;  // Initialize first partition as number itself
+            string ReadLine();
+        }
 
-            // This loop first prints current partition, then generates next
-            // partition. The loop stops when the current partition has all 1s
-            while (true)
+        private class FileLineReader : ILineReader
+        {
+
+            string[] lines;
+            int currentLine = 0;
+            public FileLineReader(string fileName)
             {
-                // print current partition
-                printArray(p, k + 1);
-
-                // Generate next partition
-
-                // Find the rightmost non-one value in p[]. Also, update the
-                // rem_val so that we know how much value can be accommodated
-                int rem_val = 0;
-                while (k >= 0 && p[k] == 1)
-                {
-                    rem_val += p[k];
-                    k--;
-                }
-
-                // if k < 0, all the values are 1 so there are no more partitions
-                if (k < 0) return;
-
-                // Decrease the p[k] found above and adjust the rem_val
-                p[k]--;
-                rem_val++;
-
-
-                // If rem_val is more, then the sorted order is violeted.  Divide
-                // rem_val in differnt values of size p[k] and copy these values at
-                // different positions after p[k]
-                while (rem_val > p[k])
-                {
-                    p[k + 1] = p[k];
-                    rem_val = rem_val - p[k];
-                    k++;
-                }
-
-                // Copy rem_val to next position and increment position
-                p[k + 1] = rem_val;
-                k++;
+                lines = File.ReadAllLines(fileName);
             }
+
+            public string ReadLine()
+            {
+                string s = lines[currentLine];
+                currentLine++;
+                return s;
+            }
+        }
+
+        private class ConsoleLineReader : ILineReader
+        {
+            public string ReadLine()
+            {
+                return Console.ReadLine();
+            }
+        }
+
+        static string PrintArray(long[] arr)
+        {
+            string s = String.Empty;
+            for (long x = 1; x < arr.LongLength; ++x)
+            {
+                if (x > 1)
+                {
+                    s += " ";
+                }
+                s += arr[x].ToString();
+            }
+            return s;
+        }
+
+        static ulong SumUpTo(ulong n)
+        {            
+            return (n * (n + 1)) / 2;
         }
 
         static void Main(string[] args)
         {
-            var testCases = int.Parse(Console.ReadLine());
+            ILineReader reader;
 
-            List<int[]> outputs = new List<int[]>();
+            if (args.Length > 0)
+            {
+                reader = new FileLineReader(args[0]);
+            }
+            else
+            {
+                reader = new ConsoleLineReader();
+            }
+
+
+            int testCases = int.Parse(reader.ReadLine());
+
+            List<string> results = new List<string>();
 
             while(testCases > 0)
             {
-                var itemsStr = Console.ReadLine().Split(' ');
-
-                int[] items = new int[3];
-
-                for(int x = 0; x < itemsStr.Length; ++x)
-                {
-                    items[x] = int.Parse(itemsStr[x]);
-                }
-                printAllUniqueParts(items[0]);
-
-                var output = partitions.FindAll(p => p.Length == items[2] && p.Length == p.Distinct().Count() && p.Max() <= items[1]);
-                if (output.Count > 0)
-                {
-                    outputs.Add(output[0]);
-                } else
-                {
-                    outputs.Add(new int[1] { -1 });
-                }
                 testCases--;
-            }
+                var input = reader.ReadLine().Split(' ');
+                var n = long.Parse(input[0]);
+                var k = long.Parse(input[1]);
+                var b = long.Parse(input[2]);
 
-            for(int o = 0; o < outputs.Count; ++o)
-            {
+                //n = n / 10000;
+                //k = k / 10000;
+                //b = b / 10000;
+
+                if (SumUpTo((ulong)b) > (ulong)n || SumUpTo((ulong)k) < (ulong)n)
+                {
+                    results.Add("-1");
+                    continue;
+                }
+                ComboGenerator cgn = new ComboGenerator(k, b);
+                var combo = cgn.Next();
                 
-                for(int x = outputs[o].Length - 1; x >=0 ; --x)
-                {                    
-                    if (x < outputs[o].Length - 1)
+                while(combo != null)
+                {
+                    var sum = combo.Sum();
+                    if (sum == n)
                     {
-                        Console.Write(" ");
+                        //for(int x = 0; x < combo.Length; ++x)
+                        //{
+                        //    combo[x] = combo[x] * 10000;
+                        //}
+                        results.Add(PrintArray(combo));
+                        break;
                     }
-
-                    Console.Write(outputs[o][x]);
+                    combo = cgn.Next();
                 }
 
-                Console.WriteLine();
+                if (combo == null)
+                {
+                    results.Add("-1");
+                }
 
             }
-            
+
+            foreach(var r in results)
+            {
+                Console.WriteLine(r);
+            }
+
             Console.ReadLine();
         }
     }
