@@ -85,6 +85,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Save the Prisoner", "Save t
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinationGenerator", "CombinationGenerator\CombinationGenerator.csproj", "{9ADA3A2C-DB99-46F9-8CD4-4931917AB1CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Journey to the Moon", "Journey to the Moon\Journey to the Moon.csproj", "{36C8C857-4EB9-4B09-981D-8761ED2AF13E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -247,6 +249,10 @@ Global
 		{9ADA3A2C-DB99-46F9-8CD4-4931917AB1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ADA3A2C-DB99-46F9-8CD4-4931917AB1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ADA3A2C-DB99-46F9-8CD4-4931917AB1CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C8C857-4EB9-4B09-981D-8761ED2AF13E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C8C857-4EB9-4B09-981D-8761ED2AF13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C8C857-4EB9-4B09-981D-8761ED2AF13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C8C857-4EB9-4B09-981D-8761ED2AF13E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

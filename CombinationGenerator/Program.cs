@@ -7,155 +7,116 @@ using System.Threading.Tasks;
 namespace Solution
 {
 
-    public class ComboGenerator
-    {
-        long n;
-        long r;
-        long[] currentCombo = null;
-        long y;
-        bool done;
-        
-        public ComboGenerator(long n, long r)
-        {
-            this.n = n;
-            this.r = r;
-            this.y = r;
-            this.done = false;
-        }
-
-        void GenerateFirst()
-        {
-            this.currentCombo = new long[r + 1];
-            for (long x = 1; x <= r; ++x)
-            {
-                currentCombo[x] = x;
-            }
-            done = false;
-        }
-
-        public long[] Next()
-        {
-            if (done == true)
-            {
-                return null;
-            }
-
-            if (currentCombo == null)
-            {
-                GenerateFirst();
-                
-            }
-            else
-            {
-                if (currentCombo[y] < n)
-                {
-                    currentCombo[y] = currentCombo[y] + 1;
-                    if (y == 1 && r == 1 && currentCombo[y] == n)
-                    {
-                        done = true;
-                    }
-                    return currentCombo;
-                }
-
-                while (currentCombo[y] >= n - (r - y))
-                {
-                    y--;
-                }
-
-                long tmp = currentCombo[y] + 1;
-
-                if (y == 1 && tmp >= n - (r - y))
-                {
-                    currentCombo[y] = tmp;
-                    done = true;
-                    return currentCombo;
-                }
-
-                while (y <= r)
-                {
-                    currentCombo[y] = tmp;
-                    y++; tmp++;
-                }
-                y--;
-                return currentCombo;
-            }
-
-            return currentCombo;
-        }
-
-
-    }
-    public class CobinationGenerator
-    {
-        
-        public void PrintArray(long[] arr)
-        {
-            string s = String.Empty;
-            for(long x = 1; x < arr.Length; ++x)
-            {
-                if (x > 1)
-                {
-                    s += " ";
-                }
-                s += arr[x].ToString();                
-            }
-
-            Console.WriteLine(s);
-        }
-
-        public bool IsSumEquals(long[] arr, long sum)
-        {
-            return arr.Sum() == sum;
-        }
-
-        public void GenerateCombo(long n, long r)
-        {
-            long[] currentCombo = new long[r + 1];
-            for(long x = 1; x <= r; ++x)
-            {
-                currentCombo[x] = x;
-            }
-            PrintArray(currentCombo);
-
-            long y = r;
-
-            while(true)
-            {
-                while(currentCombo[y] < n)
-                {
-                    currentCombo[y] = currentCombo[y] + 1;
-                    PrintArray(currentCombo);
-                }
-
-                while(currentCombo[y] >= n - (r - y))
-                {
-                    y--;                    
-                }
-
-                long tmp = currentCombo[y] + 1;
-                
-                if (y == 1 && tmp >= n - (r - y))
-                {
-                    currentCombo[y] = tmp;
-                    PrintArray(currentCombo);
-                    break;
-                }
-                
-                while (y <= r)
-                {
-                    currentCombo[y] = tmp;
-                    y++; tmp++;
-                }
-                PrintArray(currentCombo);
-                y--;
-                continue;
-
-            }
-        }
-    }
+    
 
     public class Program
     {
+
+        private class ComboGenerator
+        {
+            long n;
+            long r;
+            long[] currentCombo = null;
+            long y;
+            long total;
+            long count;
+            public ComboGenerator(long n, long r)
+            {
+                this.n = n;
+                this.r = r;
+                this.y = r;
+                this.count = 0;
+                this.total = (long)(FactByFact(n, n - r) / Fact(r));
+            }
+
+            void GenerateFirst()
+            {
+                this.currentCombo = new long[r + 1];
+                for (long x = 1; x <= r; ++x)
+                {
+                    currentCombo[x] = x;
+                }
+                count++;
+            }
+
+            public long[] Next()
+            {
+                if (total == 0) return null;
+                count++;
+                if (count > total + 1) return null;
+
+                if (currentCombo == null)
+                {
+                    GenerateFirst();
+
+                }
+                else
+                {
+                    if (currentCombo[y] < n)
+                    {
+                        currentCombo[y] = currentCombo[y] + 1;
+                        return currentCombo;
+                    }
+
+                    while (currentCombo[y] >= n - (r - y))
+                    {
+                        y--;
+                    }
+
+                    long tmp = currentCombo[y] + 1;
+
+                    if (y == 1 && tmp >= n - (r - y))
+                    {
+                        currentCombo[y] = tmp;
+                        return currentCombo;
+                    }
+
+                    while (y <= r)
+                    {
+                        currentCombo[y] = tmp;
+                        y++; tmp++;
+                    }
+                    y--;
+                    return currentCombo;
+                }
+
+                return currentCombo;
+            }
+
+        }
+
+        static decimal FactByFact(decimal f1, decimal f2)
+        {
+            decimal n1 = Math.Max(f1, f2);
+            decimal n2 = Math.Min(f1, f2);
+
+            decimal result = 1;
+
+            while (n1 > n2)
+            {
+                result *= n1;
+                n1--;
+            }
+
+            return result;
+
+        }
+
+        static decimal Fact(long n)
+        {
+            if (n == 1) return 1;
+
+            decimal result = 1;
+            while (n > 1)
+            {
+
+                result = result * n;
+                n--;
+            }
+
+            return result;
+        }
+
         static void PrintArray(long[] arr)
         {
             string s = String.Empty;
