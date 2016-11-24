@@ -6,22 +6,23 @@ using System.Linq;
 
 namespace Bonetrousle
 {    
-    class Solutino
+    class Solution
     {
-        private class ComboGenerator
+        private class ComboGeneratorReverse
         {
             long n;
             long r;
             long[] currentCombo = null;
             long y;
-            bool done;
-
-            public ComboGenerator(long n, long r)
+            long total;
+            long count;
+            public ComboGeneratorReverse(long n, long r)
             {
                 this.n = n;
                 this.r = r;
                 this.y = r;
-                this.done = false;
+                this.count = 0;
+                this.total = (long)(FactByFact(n, n - r) / Fact(r));
             }
 
             void GenerateFirst()
@@ -29,17 +30,17 @@ namespace Bonetrousle
                 this.currentCombo = new long[r + 1];
                 for (long x = 1; x <= r; ++x)
                 {
-                    currentCombo[x] = x;
+                    currentCombo[x] = n - x + 1;
                 }
-                done = false;
+
+                count++;
             }
 
             public long[] Next()
             {
-                if (done == true)
-                {
-                    return null;
-                }
+                if (total == 0) return null;
+                count++;
+                if (count > total + 1) return null;
 
                 if (currentCombo == null)
                 {
@@ -48,42 +49,74 @@ namespace Bonetrousle
                 }
                 else
                 {
-                    if (currentCombo[y] < n)
+                    if (currentCombo[y] > r - y - 1)
                     {
-                        currentCombo[y] = currentCombo[y] + 1;
-                        if (y == 1 && r == 1 && currentCombo[y] == n)
-                        {
-                            done = true;
-                        }
+                        currentCombo[y] = currentCombo[y] - 1;
                         return currentCombo;
                     }
-
-                    while (currentCombo[y] >= n - (r - y))
+                    y--;
+                    while (y > 0 && currentCombo[y] < n - y - 1)
                     {
                         y--;
                     }
 
-                    long tmp = currentCombo[y] + 1;
+                    long tmp = currentCombo[y] - 1;
 
-                    if (y == 1 && tmp >= n - (r - y))
+                    if (y == 1 && tmp < n - y - 1)
                     {
                         currentCombo[y] = tmp;
-                        done = true;
                         return currentCombo;
                     }
 
-                    while (y <= r)
+                    while (y <= r && tmp > r - y + 1)
                     {
                         currentCombo[y] = tmp;
-                        y++; tmp++;
+                        y++; tmp--;
                     }
                     y--;
+
+                    if (y > 1)
+                    {
+                        
+                    }
                     return currentCombo;
                 }
 
                 return currentCombo;
             }
 
+        }
+
+        static decimal FactByFact(decimal f1, decimal f2)
+        {
+            decimal n1 = Math.Max(f1, f2);
+            decimal n2 = Math.Min(f1, f2);
+
+            decimal result = 1;
+
+            while (n1 > n2)
+            {
+                result *= n1;
+                n1--;
+            }
+
+            return result;
+
+        }
+
+        static decimal Fact(long n)
+        {
+            if (n == 1) return 1;
+
+            decimal result = 1;
+            while (n > 1)
+            {
+
+                result = result * n;
+                n--;
+            }
+
+            return result;
         }
 
         private interface ILineReader
@@ -138,7 +171,19 @@ namespace Bonetrousle
 
         static void Main(string[] args)
         {
-            ILineReader reader;
+            ComboGeneratorReverse cgn = new ComboGeneratorReverse(6, 3);
+            var combo = cgn.Next();
+            var count = 0;
+            while(combo != null)
+            {
+                count++;
+                Console.WriteLine(PrintArray(combo));
+                combo = cgn.Next();
+                
+            }
+
+            Console.WriteLine("Total: {0}", count);
+            /*ILineReader reader;
 
             if (args.Length > 0)
             {
@@ -162,27 +207,19 @@ namespace Bonetrousle
                 var k = long.Parse(input[1]);
                 var b = long.Parse(input[2]);
 
-                //n = n / 10000;
-                //k = k / 10000;
-                //b = b / 10000;
-
                 if (SumUpTo((ulong)b) > (ulong)n || SumUpTo((ulong)k) < (ulong)n)
                 {
                     results.Add("-1");
                     continue;
                 }
-                ComboGenerator cgn = new ComboGenerator(k, b);
+                ComboGeneratorReverse cgn = new ComboGeneratorReverse(k, b);
                 var combo = cgn.Next();
                 
                 while(combo != null)
                 {
                     var sum = combo.Sum();
                     if (sum == n)
-                    {
-                        //for(int x = 0; x < combo.Length; ++x)
-                        //{
-                        //    combo[x] = combo[x] * 10000;
-                        //}
+                    {                        
                         results.Add(PrintArray(combo));
                         break;
                     }
@@ -199,7 +236,7 @@ namespace Bonetrousle
             foreach(var r in results)
             {
                 Console.WriteLine(r);
-            }
+            }*/
 
             Console.ReadLine();
         }
